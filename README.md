@@ -1,4 +1,4 @@
-### Deep-Thougyts
+### Deep-Thoughts
 
 ### User Story
 As a user, I would like a social media type platform app to track thoughts. As a user I want a secured login to the application. I want to be able to post my thoughts and view other users' thoughts. As a user, I should be able to react, or reply to a thought. As a user I should be able to befriend other users.
