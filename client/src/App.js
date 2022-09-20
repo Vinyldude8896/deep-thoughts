@@ -1,8 +1,9 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
-  ApolloProvider,
   ApolloClient,
   InMemoryCache,
+  ApolloProvider,
   createHttpLink,
 } from "@apollo/client";
 
@@ -10,15 +11,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from './pages/Login';
-import NoMatch from './pages/NoMatch';
-import SingleThought from './pages/SingleThought';
-import Profile from './pages/Profile';
-import Signup from './pages/Signup';
+import Login from "./pages/Login";
+import NoMatch from "./pages/NoMatch";
+import SingleThought from "./pages/SingleThought";
+import Profile from "./pages/Profile";
+import Signup from "./pages/Signup";
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: "/graphql",
 });
 
 const client = new ApolloClient({
@@ -34,26 +34,12 @@ function App() {
           <Header />
           <div className="container">
             <Routes>
-              <Route
-                path="/"
-                element={<Home />}
-              />
-              <Route
-                path="/login"
-                element={<Login />}
-              />
-              <Route
-                path="/signup"
-                element={<Signup />}
-              />
-              <Route
-                path="/profile"
-                element={<Profile />}
-              />
-              <Route
-                path="/thought"
-                element={<SingleThought />}
-              />
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/thought/:id" element={<SingleThought />} />
+              <Route path="*" element={<NoMatch />} />
             </Routes>
           </div>
           <Footer />
