@@ -63,4 +63,4 @@ To test this app:<br />
     I can be contacted by phone as well, but prefer email contact first.
 ### Images
 
-<img src="" alt="Getting started">
+<img src="./Deep_thoughts_1.jpg" alt="Getting started">
