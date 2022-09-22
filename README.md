@@ -39,7 +39,7 @@ Then at the root folder, run npm start and go to:
 http://localhost:3000/#home
 
 You can also view the live page here: <br />
-
+https://deepthoughtsocialapp.herokuapp.com/profile
 
 
 ### Contribution Guidelines
